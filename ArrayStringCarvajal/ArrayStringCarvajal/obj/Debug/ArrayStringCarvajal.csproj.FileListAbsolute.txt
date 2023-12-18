@@ -1,0 +1,12 @@
+C:\ArrayStringCarvajal\ArrayStringCarvajal\ArrayStringCarvajal\bin\Debug\ArrayStringCarvajal.exe.config
+C:\ArrayStringCarvajal\ArrayStringCarvajal\ArrayStringCarvajal\bin\Debug\ArrayStringCarvajal.exe
+C:\ArrayStringCarvajal\ArrayStringCarvajal\ArrayStringCarvajal\bin\Debug\ArrayStringCarvajal.pdb
+C:\ArrayStringCarvajal\ArrayStringCarvajal\ArrayStringCarvajal\obj\Debug\ArrayStringCarvajal.csproj.AssemblyReference.cache
+C:\ArrayStringCarvajal\ArrayStringCarvajal\ArrayStringCarvajal\obj\Debug\ArrayStringCarvajal.frmGuardartext.resources
+C:\ArrayStringCarvajal\ArrayStringCarvajal\ArrayStringCarvajal\obj\Debug\ArrayStringCarvajal.frmLecturaArchivo.resources
+C:\ArrayStringCarvajal\ArrayStringCarvajal\ArrayStringCarvajal\obj\Debug\ArrayStringCarvajal.Properties.Resources.resources
+C:\ArrayStringCarvajal\ArrayStringCarvajal\ArrayStringCarvajal\obj\Debug\ArrayStringCarvajal.csproj.GenerateResource.cache
+C:\ArrayStringCarvajal\ArrayStringCarvajal\ArrayStringCarvajal\obj\Debug\ArrayStringCarvajal.csproj.CoreCompileInputs.cache
+C:\ArrayStringCarvajal\ArrayStringCarvajal\ArrayStringCarvajal\obj\Debug\ArrayStringCarvajal.exe
+C:\ArrayStringCarvajal\ArrayStringCarvajal\ArrayStringCarvajal\obj\Debug\ArrayStringCarvajal.pdb
+C:\ArrayStringCarvajal\ArrayStringCarvajal\ArrayStringCarvajal\obj\Debug\ArrayStringCarvajal.frmJuegoAhorcado.resources
