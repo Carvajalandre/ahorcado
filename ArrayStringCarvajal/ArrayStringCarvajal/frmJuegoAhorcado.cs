@@ -126,8 +126,10 @@ namespace ArrayStringCarvajal
                 palabras[cont].Text = "";
                 palabras[cont].Tag = c.ToString();
                 palabras[cont].Location = new Point(x, y);
+
                 x += 72;
                 this.groupBoxFraseaAdivinar.Controls.Add(palabras[cont]);
+                cont++;
             }
         }
 
@@ -142,7 +144,10 @@ namespace ArrayStringCarvajal
             {
                 for(int i=0; i<palabras.Length; i++)
                 {
-
+                    if (palabras[i].Tag.ToString().ToUpper() == this.txtLetra.Text)
+                    {
+                        palabras[i].Text = palabras[i].Tag.ToString();
+                    }
                 }
             }
         }
