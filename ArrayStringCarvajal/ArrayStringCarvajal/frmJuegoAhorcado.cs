@@ -64,7 +64,6 @@ namespace ArrayStringCarvajal
             String line;
             arrayPalabras = new string[MAX];
             int cont = 0;
-            totalElementos = 0;
             try
             {
                 StreamReader sr = new StreamReader(nombreArchivo, Encoding.UTF8);
@@ -100,8 +99,39 @@ namespace ArrayStringCarvajal
 
         private void nuevoJuegoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show($"Total elementos{totalElementos}");
-            this.lblPalabra.Text = arrayPalabras[GenerarAleatorrio(totalElementos)];
+            int num = GenerarAleatorrio(totalElementos);
+            this.lblPalabra.Text = arrayPalabras[num];
+            MuestraFrase(this.lblPalabra.Text.ToUpper());
+            this.groupBoxFraseaAdivinar.Text = $"Frase a adivinar: {this.lblPalabra.Text}";
+            MessageBox.Show($"Total elementos{totalElementos} - {num}");
+
+        }
+        private void MuestraFrase(string frase)
+        {
+            this.groupBoxFraseaAdivinar.Controls.Clear();
+
+            TextBox[] palabras = new TextBox[frase.Length];
+            int cont = 0, x = 15, y = 27;
+            foreach (Char c in frase)
+            {
+                palabras[cont] = new TextBox();
+                palabras[cont].Size = new Size(60, 60);
+                palabras[cont].TextAlign = HorizontalAlignment.Center;
+                palabras[cont].MaxLength = 1;
+                palabras[cont].Multiline = true;
+                palabras[cont].ReadOnly = true;
+                Font fuente = new Font("Calibri", 24);
+                palabras[cont].Font = fuente;
+                palabras[cont].Text = c.ToString();
+                palabras[cont].Location = new Point(x, y);
+                x += 72;
+                this.groupBoxFraseaAdivinar.Controls.Add(palabras[cont]);
+            }
+        }
+
+        private void frmJuegoAhorcado_Load(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
         }
     }
 }
