@@ -17,6 +17,7 @@ namespace ArrayStringCarvajal
         string[] arrayPalabras;
         int totalElementos;
         string categoria = "";
+        TextBox[] palabras;
         public frmJuegoAhorcado()
         {
             InitializeComponent();
@@ -110,7 +111,7 @@ namespace ArrayStringCarvajal
         {
             this.groupBoxFraseaAdivinar.Controls.Clear();
 
-            TextBox[] palabras = new TextBox[frase.Length];
+            palabras = new TextBox[frase.Length];
             int cont = 0, x = 15, y = 27;
             foreach (Char c in frase)
             {
@@ -122,7 +123,8 @@ namespace ArrayStringCarvajal
                 palabras[cont].ReadOnly = true;
                 Font fuente = new Font("Calibri", 24);
                 palabras[cont].Font = fuente;
-                palabras[cont].Text = c.ToString();
+                palabras[cont].Text = "";
+                palabras[cont].Tag = c.ToString();
                 palabras[cont].Location = new Point(x, y);
                 x += 72;
                 this.groupBoxFraseaAdivinar.Controls.Add(palabras[cont]);
@@ -132,6 +134,17 @@ namespace ArrayStringCarvajal
         private void frmJuegoAhorcado_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void btnValidar_Click(object sender, EventArgs e)
+        {
+            if (this.txtLetra.Text.Length > 0)
+            {
+                for(int i=0; i<palabras.Length; i++)
+                {
+
+                }
+            }
         }
     }
 }

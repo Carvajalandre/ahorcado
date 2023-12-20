@@ -367,6 +367,7 @@
             this.btnValidar.TabIndex = 8;
             this.btnValidar.Text = "Ingresar";
             this.btnValidar.UseVisualStyleBackColor = true;
+            this.btnValidar.Click += new System.EventHandler(this.btnValidar_Click);
             // 
             // frmJuegoAhorcado
             // 
